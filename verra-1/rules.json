@@ -1,0 +1,7 @@
+{
+    "type": "AND",
+    "rules": [
+        { "type": "LengthRule", "length": 6 },
+        { "type": "PrefixRule", "prefix": "re" }
+    ]
+}
