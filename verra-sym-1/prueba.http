@@ -1,0 +1,29 @@
+### Aggregate Customer Preferences
+POST http://127.0.0.1:8000/api/preferences/aggregate
+Content-Type: application/json
+
+{
+  "records": [
+    {
+      "customerId": "A12",
+      "email": "John.Doe+mobile@Example.com",
+      "language": "EN",
+      "marketingOptIn": true,
+      "preferredCategories": ["tech", "books"]
+    },
+    {
+      "customerId": "A12",
+      "email": "john.doe@example.com",
+      "language": "en-US",
+      "marketingOptIn": false,
+      "preferredCategories": ["books", "sports"]
+    },
+    {
+      "customerId": "B55",
+      "email": "maria@example.es",
+      "language": "ES",
+      "marketingOptIn": true,
+      "preferredCategories": ["fashion"]
+    }
+  ]
+}
